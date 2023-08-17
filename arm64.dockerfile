@@ -26,8 +26,8 @@ RUN apt install docker-ce docker-ce-cli docker-buildx-plugin containerd.io docke
 
 #github runner
 RUN curl -O -L https://github.com/actions/runner/releases/download/v2.308.0/actions-runner-linux-arm64-2.308.0.tar.gz
-RUN tar xzf ./actions-runner-linux-x64-2.308.0.tar.gz
-RUN rm -f actions-runner-linux-x64-2.308.0.tar.gz
+RUN tar xzf ./actions-runner-linux-arm64-2.308.0.tar.gz
+RUN rm -f actions-runner-linux-arm64-2.308.0.tar.gz
 COPY docker.sh .
 
 #user and permissions

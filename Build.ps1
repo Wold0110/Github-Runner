@@ -1,1 +1,1 @@
-docker build . -t wolf0110/github-runner
+docker build . -f x64.dockerfile -t wolf0110/github-runner

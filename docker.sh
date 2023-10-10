@@ -7,6 +7,8 @@ if [ ! -e $CONTAINER_ALREADY_STARTED ]; then
     ./config.sh --url $GITHUB_URL --token $GITHUB_TOKEN
 else
     echo "-- Not first container startup --"
+    sudo rm /var/run/docker.pid
+    sudo rm /var/run/docker-ssd.pid
 fi
 
 #always run
